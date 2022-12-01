@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lu Games</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/lugames (1).png" alt="Logo">
+    <div>
+            <strong><a href="">Lojas| </a>
+            <a href="">Criadores | </a>
+            <a href="">Mais Jogados| </a>
+            <a href="">Plataformas </a></strong>
+    </div>
+    <!--Barra de pesquisa-->
+    <div id="caixa">
+    <input type="text" name="Pesquisar Entrevistas" id="barra" onkeyup="pesquisa()">
+    <div id="resultadosPesquisa">
+    </div>
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="titulo">
+                <h1>Portal Lu Games</h1>
+            </div>
+            <!--CARROSEL-->
+            
+            <div class="lojas">
+            <h2 style="color: white; font-size:40px; padding: 5 px 10px; display: flex; justify-content: center;">
+                <strong>  Nossas melhores lojas </strong></h2>
+            </div>
+            <div class="carrosel">
+              
+            </div>
+            
+        </section>
+         <!--FIM CARROSSEL-->
+    
+    
+    
+         <!--ORDEM DE LANÇAMENTOS-->
+        
+         <div id="ENTREVISTAS">
+            <h2><strong>Top 5 criadores</strong></h2>
+            <div class="cards">
+                
+            </div>
+        </div>
+
+        <div id="LTWT">
+            <h2><strong>Os mais jogados do momento</strong></h2>
+            
+                <div class="Brasil"></div>
+            
+          
+        </div>
+            <!--FIM ORDEM DE LANÇAMENTOS-->
+    
+            <!--Distribuição-->
+        <div id="resp">
+            <h2><strong>Principais plataformas</strong></h2>
+            <div>
+                
+            </div>
+    
+        </div>
+
+    
+    <!--ANTES DO FOOTER-->
+    <div id="INFOS">
+    
+    
+            <div class="SOBRE">
+            <h2><strong>Sobre</strong></h2>
+            <p> O Portal Lu Games irá te ajudar com as informações mais recentes dos jogos mais bombados do momento!</p>
+            <p> Este website foi desenvolvido usando a RAWG API e os conhecimentos adquiridos ao longo das aulas da disciplina de Desenvolvimento de Interfaces Web</p>
+           
+        </div>
+    
+    
+            <div class="EDITORIAL">  
+            <h2><strong>Editorial</strong></h2>
+            <ul><img src="icones/person-fill.svg" alt=""><strong> Aluno:</strong> Ana Luíza Gonçalves Leite</ul>
+            <ul><img src="icones/person-fill.svg" alt=""><strong> Matícula:</strong> 788724</ul>
+            <ul><img src="icones/person-fill.svg" alt=""><strong> Curso:</strong>  Sistemas de infromação</ul>
+            
+            <span></span>
+            <a><img src="icones/whatsapp.svg" alt="Whatsapp Logo"></a>
+            <a><img src="icones/twitter.svg" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com/__analulu__/"><img src="icones/instagram.svg" alt="Instagram Logo"></a>
+
+            </div>
+    
+    
+         </div>
+    
+    </main>
+    
+    
+    <footer>
+    <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <strong> ICEI PUC MINAS </strong></p>
+    <img src="imagens/lugames (1).png" alt="Logo do Site">
+    </footer>
+
+  
+
+
+    <script src="script.js"></script>
+
+    <script>
+        var slideIndex = 0;
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("PAINEL");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "flex";
+        setTimeout(carousel, 2500); 
+        }
+
+    </script>
+</body>
+</html>
